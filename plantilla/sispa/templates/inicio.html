@@ -4,7 +4,144 @@
 
 {% block contenido %}
 
-<p>Hola mundo</p>
+
+
+
+
+
+
+            <!-- Content Header (Page header) -->
+
+            <div class="content-header">
+
+                <div class="container-fluid">
+
+                    <div class="col-sm-6">
+
+
+                        <B>Bienvenido - {{ today | date:"d-m-Y" }}</B>
+
+                     
+
+                    </div><!-- /.col -->
+
+                </div><!-- /.container-fluid -->
+
+            </div>
+
+ <form action="#" method="post" id="form1" name="form1" enctype="multipart/form-data">
+
+
+
+                <section class="content">
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-md-3">
+
+
+
+
+
+                                <div class="card card-primary card-outline">
+
+                                    <div class="card-body box-profile">
+
+
+                                        <h3 class="profile-username text-center">SOLICITUD DE SOPORTE</h3>
+
+                                        <ul class="list-group list-group-unbordered mb-3">
+
+                                            <li class="list-group-item">
+
+                                                <select class="form-control form-control-sm" name="area" id="area" required>
+
+                                                    <option selected disabled>SELECCIONAR AREA</option>
+
+                                                     {% for area in areas %}
+
+                                                     <option value="{{ area.identificador }}">{{ area.area }}</option>
+
+                                                    {% endfor %}
+
+                                                </select>
+
+
+
+                                            </li>
+
+                                            <li class="list-group-item" id="f1" name="f1"> </li>
+
+                                        </ul>
+
+                                    </div>
+
+                                    <!-- /.card-body -->
+
+                                </div>
+
+                                <!-- /.card -->
+
+
+
+                            </div>
+
+                            <!-- /.col -->
+
+
+
+                            <div class="col-md-9">
+
+
+
+                                <li class="list-group-item" id="f2">
+
+                                </li>
+
+
+
+                                
+
+
+
+                                
+
+
+
+
+
+
+
+                            </div>
+
+                            <!-- /.col -->
+
+
+
+                        </div>
+
+                        <!-- /.row -->
+
+                    </div><!-- /.container-fluid -->
+
+                </section>
+
+
+
+            </form>
+
+            
+            <div class="row">
+
+                <!-- fix for small devices only -->
+
+                <div class="clearfix hidden-md-up"></div>
+
+            </div><!-- /.container-fluid -->
+
+
 
 
 {% endblock %}
