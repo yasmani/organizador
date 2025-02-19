@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fsk*&cpnz4jfl&#fw_6iyd&3z!!mk_&5u$rc(t#mh!580jinds'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'plantilla.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'yasmani6767$default',
+        'USER':'yasmani6767',
+        'PASWOORD':'Yayo6767',
+        'HOST':'yasmani6767.mysql.pythonanywhere-services.com',
+        'PORT':'3306',
     }
 }
 
